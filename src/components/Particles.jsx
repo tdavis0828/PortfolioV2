@@ -1,6 +1,6 @@
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import "../index.css";
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+import '../index.css';
 
 const ParticlesBackground = () => {
   const particlesInit = async (main) => {
@@ -24,7 +24,7 @@ const ParticlesBackground = () => {
         options={{
           background: {
             color: {
-              value: "#00909E",
+              value: '#00909E',
             },
           },
           fpsLimit: 120,
@@ -32,11 +32,11 @@ const ParticlesBackground = () => {
             events: {
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: 'push',
               },
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: 'repulse',
               },
               resize: true,
             },
@@ -52,25 +52,25 @@ const ParticlesBackground = () => {
           },
           particles: {
             color: {
-              value: "#C9D1D3",
+              value: '#C9D1D3',
             },
             links: {
-              color: "#C9D1D3",
-              distance: 150,
+              color: '#C9D1D3',
+              distance: 50,
               enable: true,
               opacity: 0.5,
               width: 1,
             },
             collisions: {
-              enable: true,
+              enable: false,
             },
             move: {
-              direction: "none",
+              direction: 'none',
               enable: true,
               outModes: {
-                default: "bounce",
+                default: 'bounce',
               },
-              random: false,
+              random: true,
               speed: 2,
               straight: false,
             },
@@ -79,13 +79,13 @@ const ParticlesBackground = () => {
                 enable: true,
                 area: 800,
               },
-              value: 80,
+              value: 150,
             },
             opacity: {
               value: 0.5,
             },
             shape: {
-              type: "triangle",
+              type: 'triangle',
             },
             size: {
               value: { min: 1, max: 5 },

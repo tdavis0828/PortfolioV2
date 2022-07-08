@@ -1,25 +1,20 @@
-import styled from "styled-components";
-
-const StyledIcons = styled.div`
-  height: 85px;
-  width: 400px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  color: #fff;
-  font-size: 1.3rem;
-`;
+import { StyledIcons } from './styles';
 
 const SocialIcons = () => {
   return (
     <StyledIcons>
-      <i className="fa-brands fa-github-alt"></i>
-      <i className="fa-brands fa-linkedin-in"></i>
-      <i className="fa-solid fa-paper-plane"></i>
-      <i className="fa-brands fa-instagram"></i>
+      <a href="https://www.github.com" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-github-alt"></i>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.gmail.com" target="_blank" rel="noreferrer">
+        <i className="fa-solid fa-paper-plane"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+        <i className="fa-brands fa-instagram"></i>
+      </a>
     </StyledIcons>
   );
 };
